@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body { /*sem por width e height o background se ajusta*/
+    font-family: 'league spartan', sans-serif;
+    font-size: 15px;
+    width: 100vw;
+}
+
+main {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background: 
+    url(./images/bg-pattern-top-desktop.svg),
+    url(./images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 0% 0%, 100% 100%;
+}
+
+.container { /*os itens não estão centralizando*/
+    width: 75%;
+    margin-top: 60px;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+h3 {
+    font-size: 15px;
+}
+
+.intro{
+    display: flex;
+    grid-column: 1;
+    grid-row: 1;
+    width: 70%;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+.rates {
+    display: flex;
+    flex-direction: column;
+    grid-row: 1;
+    grid-column: 2;
+    gap: 12px;
+    justify-content: center;
+}
+
+.testimonials {
+    display: flex;
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: 325x;
+    gap: 30px;
+}
+
+/* estilizando intro*/
+
+.intro h1 {
+   color: hsl(300, 43%, 22%); 
+   font-weight: 700;
+   font-size: 50px;
+}
+
+.intro p {
+    color: hsl(302, 16%, 45%);
+    line-height: 20px;
+    font-weight: 500;
+}
+
+/*estilizando rates*/
+
+.rate1 {
+    height: 40px;
+    display: flex;
+    background-color: hsl(300, 24%, 96%);
+    align-items: center;
+    margin-right: 30%;
+    padding-left: 25px;
+    margin-left: -40px;
+    gap: 10px;
+    border-radius: 0.6rem;
+}
+
+.rates h3 {
+    color:hsl(300, 43%, 22%) ;
+}
+
+.rate1 img, .rate2 img, .rate3 img {
+    height: 15px;
+}
+
+.rate1 :nth-child(5),
+.rate2 :nth-child(5),
+.rate3 :nth-child(5) {
+    margin-right: 25px;
+}
+.rate2, .rate3 {
+    display: flex;
+    background-color: hsl(300, 24%, 96%);
+}
+
+.rate2 {
+    height: 40px;
+    display: flex;
+    background-color: hsl(300, 24%, 96%);
+    align-items: center;
+    padding-left: 25px;
+    gap: 10px;
+    margin-right: 22%;
+    border-radius: 0.6rem;
+}
+
+
+
+.rate3 {
+    height: 40px;
+    display: flex;
+    background-color: hsl(300, 24%, 96%);
+    align-items: center;
+    padding-left: 25px;
+    gap: 10px;
+    margin-left: 40px;
+    margin-right: 16%;
+    border-radius: 0.6rem;
+}
+
+
+/* estilizando testimonials colton*/
+
+.colton {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: fit-content;
+    background-color: hsl(300, 43%, 22%);
+    padding: 35px;
+    gap: 30px;
+    border-radius: 0.5rem;
+}
+
+.colton article,
+.irene article,
+.anne article {
+    color:hsl(0, 0%, 100%);
+    line-height: 20px;
+    font-size: 14px;
+    width: auto;
+    margin: 0;
+}
+
+.profile_colton,
+.profile_irene,
+.profile_anne {
+    display: flex;
+    gap: 25px;
+}
+
+.profile_colton img,
+.profile_irene img,
+.profile_anne img {
+    grid-column: 1;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0;
+}
+
+.name_title,
+.name_title2,
+.name_title3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.name_title :nth-child(1),
+.name_title2 :nth-child(1),
+.name_title3 :nth-child(1){
+
+    color: hsl(0, 0%, 100%);
+}
+
+.name_title :nth-child(2),
+.name_title2 :nth-child(2),
+.name_title3 :nth-child(2){
+    color: hsl(333, 80%, 67%);
+    font-weight: 400;
+}
+
+/* estilizando testimonials irene*/
+
+.irene {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: fit-content;
+    background-color: hsl(300, 43%, 22%);
+    padding: 35px;
+    gap: 30px;
+    border-radius: 0.5rem;
+    margin-top: 20px;
+}
+
+
+/* estilizando testimonials irene*/
+
+.anne {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: fit-content;
+    background-color: hsl(300, 43%, 22%);
+    padding: 35px;
+    gap: 30px;
+    border-radius: 0.5rem;
+    margin-top: 40px;
+}

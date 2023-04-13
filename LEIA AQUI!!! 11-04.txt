@@ -1,0 +1,4 @@
+taca display flex na intro, rates e testimonials
+
+e taca grid-column-start: 1;
+    grid-column-end: 3; no testimonials
